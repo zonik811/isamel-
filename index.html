@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<!-- ======================================= -->
+	<!-- Sección head -->
+	<!-- ======================================= -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bicicletas CYBY | Inicio</title>
+		
+		<!-- Bootstrap 5 & Icons -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		
+		<!-- Estilos personalizados -->
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>	
+	<!-- ======================================= -->
+	<!-- Fin Sección head -->
+	<!-- ======================================= -->
+
+	<!-- ======================================= -->
+	<!-- Sección del body -->
+	<!-- ======================================= -->
+	<body>
+	
+		<!-- ======================================= -->
+		<!-- Sección del header o encabezado -->
+		<!-- ======================================= -->
+		<header>
+			<div class="superior">
+				<div class="logo">
+					<a href="index.html">
+						<img src="imgs/logo_cyby01.png" alt="Logo CYBY">
+					</a>
+				</div>
+
+				<div class="buscador">
+					<form id="formBuscador">
+						<input 
+							type="text" 
+							id="inputBuscador" 
+							placeholder="Buscar componentes..."
+							aria-label="Buscar"
+						>
+
+						<select id="tipoBusqueda">
+							<option value="sitio">En CYBY</option>
+							<option value="internet">En Internet</option>
+						</select>
+
+						<button type="submit" title="Buscar"><i class="bi bi-search"></i></button>
+					</form>
+				</div>
+			</div>
+			
+			<div class="inferior">
+				<nav class="navegacion">
+					<ul class="menu">
+						<li><a href="index.html" class="activo"><i class="bi bi-house-door me-1"></i> Inicio</a></li> 
+						<li><a href="catalogo.html"><i class="bi bi-grid me-1"></i> Catálogo</a></li>
+						<li><a href="novedades.html"><i class="bi bi-stars me-1"></i> Novedades</a></li>
+						<li><a href="nosotros.html"><i class="bi bi-people me-1"></i> Quiénes somos</a></li>
+						<li><a href="contacto.html"><i class="bi bi-envelope me-1"></i> Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- ======================================= -->
+		<!-- Fin Sección del header o encabezado -->
+		<!-- ======================================= -->
+		
+		<!-- ======================================= -->
+		<!-- Sección hero -->
+		<!-- ======================================= -->
+		<section class="hero">
+			<img src="imgs/portada01.png" alt="Portada Bicicletas CYBY">
+		</section>
+		<!-- ======================================= -->
+		<!-- Fin Sección hero -->
+		<!-- ======================================= -->		
+		
+		<!-- ======================================= -->
+		<!--  Sección del main o principal -->
+		<!-- ======================================= -->
+		<main class="contenedor">
+			<!-- ======================================= -->
+			<!-- Intro -->
+			<!-- ======================================= -->
+			<section class="intro" id="quienes-somos">
+				<h2><i class="bi bi-bicycle text-warning me-2"></i> Bienvenidos a Bicicletas CYBY</h2>
+				<p>Somos fabricantes y distribuidores de componentes, cuadros y refacciones de alta calidad para bicicletas de montaña, ruta y uso urbano. Nuestro compromiso es brindarte durabilidad, diseño ergonómico y el mejor rendimiento para cada rodada en la ciudad y en la montaña.</p>
+			</section>
+			
+			<div class="seccion-encabezado">
+				<h2>Productos Destacados</h2>
+				<a href="catalogo.html" class="btn-volver">Ver todo el catálogo <i class="bi bi-arrow-right ms-1"></i></a>
+			</div>
+
+			<!-- ======================================= -->
+			<!-- Catálogo Destacados -->
+			<!-- ======================================= -->
+			<section class="catalogo">
+				<!-- Tarjeta 1: Manubrios -->	
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Manubrios Cross Pro</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/manubrio_cross01.png" alt="Manubrio Cross Pro">
+					</div>
+					<div class="texto-t-01">
+						<p>Los mejores manubrios, especialmente diseñados para el máximo confort y con una durabilidad única.</p>
+						<span class="precio-tarjeta">$280 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(10)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=10" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div> 
+				
+				<!-- Tarjeta 2: Puños -->
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Puños Americanos</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/punio_americano01.png" alt="Puño Americano">
+					</div>
+					<div class="texto-t-01">
+						<p>Los mejores puños, diseñados para máximo confort, durabilidad y agarre antideslizante.</p>
+						<span class="precio-tarjeta">$90 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(20)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=20" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tarjeta 3: Sillines -->
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Sillín Comfort Plus</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/sillin.png" alt="Sillín Comfort Plus">
+					</div>
+					<div class="texto-t-01">
+						<p>Los mejores sillines, especialmente diseñados para el máximo confort y con una durabilidad única.</p>
+						<span class="precio-tarjeta">$220 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(30)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=30" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div> 
+				
+				<!-- Tarjeta 4: Cuadros -->
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Cuadro MTB Reforzado</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/cuadros.png" alt="Cuadro MTB">
+					</div>
+					<div class="texto-t-01">
+						<p>Los mejores cuadros, especialmente diseñados para el máximo confort y con una durabilidad única.</p>
+						<span class="precio-tarjeta">$1,250 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(40)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=40" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div> 
+				
+				<!-- Tarjeta 5: Tijeras -->
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Tijera Rígida Urbana</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/tijera.png" alt="Tijera Rígida Urbana">
+					</div>	
+					<div class="texto-t-01">
+						<p>Las mejores tijeras, especialmente diseñadas para el máximo confort y con una durabilidad única.</p>
+						<span class="precio-tarjeta">$260 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(70)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=70" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div> 
+				
+				<!-- Tarjeta 6: Horquillas -->
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Horquilla Delantera</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/horquilla.png" alt="Horquilla Delantera">
+					</div>	
+					<div class="texto-t-01">
+						<p>Las mejores horquillas, especialmente diseñadas para el máximo confort y con una durabilidad única.</p>
+						<span class="precio-tarjeta">$450 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(50)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=50" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div> 
+
+				<!-- Tarjeta 7: Canastillas -->
+				<div class="t-01">
+					<div class="titulo-tarjeta">
+						<h2>Canastilla Frontal</h2>
+					</div>
+					<div class="img-t-01">
+						<img src="imgs/canastilla.png" alt="Canastilla Frontal">
+					</div>	
+					<div class="texto-t-01">
+						<p>Resistencia y comodidad de carga para paseos y uso urbano diario con soportes incluidos.</p>
+						<span class="precio-tarjeta">$180 MXN</span>
+						<div class="acciones-tarjeta">
+							<button class="btn-agregar-carrito" onclick="carritoCYBY.agregarProducto(60)">
+								<i class="bi bi-cart-plus"></i> Añadir
+							</button>
+							<a href="producto.html?id=60" class="btn-detalle" title="Ver Detalle"><i class="bi bi-eye"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- ======================================= -->
+		<!-- Fin Sección del main o principal -->
+		<!-- ======================================= -->		
+		
+		<!-- ======================================= -->
+		<!-- Sección del footer o pie -->
+		<!-- ======================================= -->
+		<footer>
+			<div class="superior-footer">
+				<div class="primera-columna">
+					<div class="logo">
+						<img src="imgs/logo_cyby01.png" alt="Logo CYBY">
+					</div>
+					<p>Especialistas en componentes ciclistas de alto rendimiento y máxima durabilidad.</p>
+				</div>
+				<div class="columna">
+					<h2><i class="bi bi-geo-alt text-warning me-1"></i> Ubicación</h2>
+					<ul>
+						<li>Emilio Carranza 444</li>
+						<li>Col. El retoño</li>
+						<li>Alc. Iztapalapa</li>
+						<li>09440 CDMX, México</li>
+					</ul>
+				</div>
+				<div class="columna">
+					<h2><i class="bi bi-clock text-warning me-1"></i> Horarios</h2>
+					<p>Lunes a viernes: 08:00 a 18:00</p>
+					<p>Sábados: 09:00 a 14:00</p>
+				</div>
+				<div class="columna">
+					<h2><i class="bi bi-telephone text-warning me-1"></i> Contacto</h2>
+					<p>Teléfono: 55 5532 9490</p>
+					<p><i class="bi bi-instagram text-warning"></i> @BicicletasCYBY</p>
+					<p><i class="bi bi-facebook text-warning"></i> Bicicletas CYBY</p>
+				</div>
+				<div class="columna">
+					<h2><i class="bi bi-shield-check text-warning me-1"></i> Legales</h2>
+					<p>
+						<a href="#" id="abrirAviso">Aviso Legal</a>
+					</p>
+					<p>
+						<a href="#" id="abrirPrivacidad">Políticas de privacidad</a>
+					</p>
+				</div>
+			</div>
+			<div class="inferior-footer">
+				Derechos reservados CYBY 2025
+			</div>
+		</footer>
+		<!-- ======================================= -->
+		<!-- Fin Sección del footer o pie -->
+		<!-- ======================================= -->		
+		
+		<!-- ======================================= -->
+		<!-- VENTANAS MODALES -->
+		<!-- ======================================= -->
+		
+		<!-- Modal Aviso Legal -->
+		<div id="modalAviso" class="modal">
+			<div class="modal-contenido">
+				<span class="cerrar-modal" id="cerrarAviso">&times;</span>
+				<h2>Aviso Legal</h2>
+				<p>
+					Este sitio web es propiedad de <strong>Bicicletas CYBY</strong>.
+					Toda la información, imágenes y contenidos mostrados son de uso
+					exclusivo de la empresa.
+				</p>
+				<p>
+					Queda prohibida la reproducción total o parcial del contenido
+					sin autorización previa por escrito.
+				</p>
+				<p>
+					El uso de este sitio implica la aceptación de nuestros términos
+					y condiciones.
+				</p>
+			</div>
+		</div>
+
+		<!-- Modal Políticas de Privacidad -->
+		<div id="modalPrivacidad" class="modal">
+			<div class="modal-contenido">
+				<span class="cerrar-modal" id="cerrarPrivacidad">&times;</span>
+				<h2>Políticas de Privacidad</h2>
+				<p>
+					En <strong>Bicicletas CYBY</strong> respetamos y protegemos
+					la privacidad de nuestros usuarios.
+				</p>
+				<p>
+					Los datos personales recabados a través de este sitio web
+					serán utilizados únicamente para fines de contacto,
+					atención a clientes y cotizaciones.
+				</p>
+				<p>
+					En ningún caso la información será compartida con terceros
+					sin el consentimiento expreso del usuario.
+				</p>
+				<p>
+					El usuario puede solicitar la modificación o eliminación
+					de sus datos en cualquier momento.
+				</p>
+			</div>
+		</div>
+
+		<!-- ======================================= -->
+		<!-- SCRIPTS -->
+		<!-- ======================================= -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/productos.js"></script>
+		<script src="js/modales.js"></script>
+		<script src="js/buscador.js"></script>
+		<script src="js/carrito.js"></script>
+	</body>
+</html>
